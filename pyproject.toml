@@ -1,0 +1,6 @@
+[project]
+name = "intelligent-intersection-management"
+version = "0.1.0"
+description = "Research prototype of constrained two-phase control using precomputed queues"
+requires-python = ">=3.10"
+dependencies = []

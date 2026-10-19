@@ -1,0 +1,21 @@
+@startuml
+left to right direction
+actor Operator
+actor Reviewer
+rectangle "Intersection management system" {
+usecase "Configure a run" as C
+usecase "Monitor traffic state" as M
+usecase "Request manual phase" as P
+usecase "Run paired experiments" as E
+usecase "Inspect results" as I
+usecase "Export report" as X
+usecase "Validate timing and clearance" as V
+}
+Operator --> C
+Operator --> M
+Operator --> P
+Operator --> E
+Reviewer --> I
+Reviewer --> X
+P ..> V : <<include>>
+@enduml

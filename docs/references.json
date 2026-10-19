@@ -1,0 +1,200 @@
+[
+  {
+    "id": "S01",
+    "authors": "Ge Z et al",
+    "year": "2021",
+    "title": "YOLOX Exceeding YOLO Series in 2021",
+    "type": "Scientific report arXiv",
+    "url": "https://arxiv.org/abs/2107.08430",
+    "contribution": "Anchor-free detector with decoupled head and SimOTA.",
+    "limitation": "General object detection does not establish queue estimation accuracy at a fixed roadside camera.",
+    "use": "Keep as an older reproducible detector baseline; benchmark locally."
+  },
+  {
+    "id": "S02",
+    "authors": "Zhang Y et al",
+    "year": "2022",
+    "title": "ByteTrack Multi Object Tracking by Associating Every Detection Box",
+    "type": "ECCV 2022 arXiv version",
+    "url": "https://arxiv.org/abs/2110.06864",
+    "contribution": "Associates lower-confidence detections with existing tracks.",
+    "limitation": "Reported MOT benchmarks cannot establish vehicle counting accuracy for this intersection.",
+    "use": "Preferred initial tracker; measure duplicate crossings and missed vehicles."
+  },
+  {
+    "id": "S03",
+    "authors": "Aharon N Orfaig R Bobrovsky B",
+    "year": "2022",
+    "title": "BoT SORT Robust Associations Multi Pedestrian Tracking",
+    "type": "Scientific preprint arXiv",
+    "url": "https://arxiv.org/abs/2206.14651",
+    "contribution": "Combines motion and appearance with camera-motion compensation.",
+    "limitation": "Pedestrian evaluation and added appearance processing require validation on stationary-camera traffic.",
+    "use": "Alternative if identity continuity fails with ByteTrack."
+  },
+  {
+    "id": "S04",
+    "authors": "Zhao Y et al",
+    "year": "2024",
+    "title": "DETRs Beat YOLOs on Real time Object Detection",
+    "type": "CVPR 2024 arXiv version",
+    "url": "https://arxiv.org/abs/2304.08069",
+    "contribution": "RT-DETR provides an end-to-end transformer detection design.",
+    "limitation": "Published throughput uses particular hardware and workloads.",
+    "use": "Detector alternative; measure end-to-end latency on the project machine."
+  },
+  {
+    "id": "S05",
+    "authors": "Wang C Y Bochkovskiy A Liao H Y M",
+    "year": "2023",
+    "title": "YOLOv7 Trainable bag of freebies sets new state of the art for real time object detectors",
+    "type": "CVPR 2023 preprint 2022",
+    "url": "https://arxiv.org/abs/2207.02696",
+    "contribution": "Training and architecture improvements target real-time detection.",
+    "limitation": "Generic detection results do not resolve night-time occlusion and camera perspective.",
+    "use": "Compare a practical YOLO-family model with RT-DETR rather than assuming a family winner."
+  },
+  {
+    "id": "S06",
+    "authors": "Cao J et al",
+    "year": "2023",
+    "title": "Observation Centric SORT Rethinking SORT for Robust Multi Object Tracking",
+    "type": "CVPR 2023 arXiv version",
+    "url": "https://arxiv.org/abs/2203.14360",
+    "contribution": "Uses observations to reduce accumulated motion errors through occlusion.",
+    "limitation": "Tracking speed without detector cost is not complete pipeline speed.",
+    "use": "Third tracking alternative for occlusion stress tests."
+  },
+  {
+    "id": "S07",
+    "authors": "Du Y et al",
+    "year": "2023",
+    "title": "StrongSORT Make DeepSORT Great Again",
+    "type": "IEEE Transactions on Multimedia accepted 2023 arXiv version",
+    "url": "https://arxiv.org/abs/2202.13514",
+    "contribution": "Improves a tracking baseline and studies association and interpolation.",
+    "limitation": "Global linking and interpolation variants need an online-causality check before use in a controller.",
+    "use": "Use online-only alternatives in live feedback; reserve retrospective repair for analysis."
+  },
+  {
+    "id": "S08",
+    "authors": "Wang C Y Yeh I H Liao H Y M",
+    "year": "2024",
+    "title": "YOLOv9 Learning What You Want to Learn Using Programmable Gradient Information",
+    "type": "Scientific paper arXiv version",
+    "url": "https://arxiv.org/abs/2402.13616",
+    "contribution": "Introduces programmable gradient information and GELAN.",
+    "limitation": "Architecture improvements do not remove the need for site-specific annotation.",
+    "use": "Candidate when detector errors dominate the queue estimate."
+  },
+  {
+    "id": "S09",
+    "authors": "Azfar T et al",
+    "year": "2025",
+    "title": "Traffic Co Simulation Framework Empowered by Infrastructure Camera Sensing and Reinforcement Learning",
+    "type": "Journal of Intelligent Transportation Systems arXiv v2",
+    "url": "https://arxiv.org/abs/2412.03925",
+    "contribution": "Connects camera-based sensing with CARLA and SUMO and investigates imperfect sensing.",
+    "limitation": "A co-simulation result is not evidence of performance at the selected real site.",
+    "use": "Direct motivation for ideal-sensing versus noisy-sensing ablation."
+  },
+  {
+    "id": "S10",
+    "authors": "Wei H et al",
+    "year": "2019",
+    "title": "PressLight Learning Max Pressure Control to Coordinate Traffic Signals in Arterial Network",
+    "type": "KDD 2019 author implementation",
+    "url": "https://github.com/wingsweihua/presslight",
+    "contribution": "Uses pressure-based state and reward design in reinforcement learning.",
+    "limitation": "Network experiments and learned policy design differ from a two-phase local heuristic.",
+    "use": "Foundational rationale; do not label longest-queue control as max-pressure without downstream queues."
+  },
+  {
+    "id": "S11",
+    "authors": "Wei H et al",
+    "year": "2019",
+    "title": "CoLight Learning Network level Cooperation for Traffic Signal Control",
+    "type": "CIKM 2019 arXiv version",
+    "url": "https://arxiv.org/abs/1905.05717",
+    "contribution": "Uses graph attention to exchange information between intersections.",
+    "limitation": "Coordination adds topology and communication requirements outside a one-junction scope.",
+    "use": "Foundational justification for deferring network-wide coordination."
+  },
+  {
+    "id": "S12",
+    "authors": "Goel H et al",
+    "year": "2023",
+    "title": "SocialLight Distributed Cooperation Learning towards Network Wide Traffic Signal Control",
+    "type": "AAMAS 2023 arXiv version",
+    "url": "https://arxiv.org/abs/2305.16145",
+    "contribution": "Uses distributed cooperative learning and evaluates in SUMO and CityFlow.",
+    "limitation": "A network-learning approach brings training and attribution costs beyond the minimum prototype.",
+    "use": "Future extension; retain explicit baselines before adopting MARL."
+  },
+  {
+    "id": "S13",
+    "authors": "Eclipse SUMO contributors",
+    "year": "accessed 16 Oct 2026",
+    "title": "TraCI and traffic light control documentation",
+    "type": "Official technical documentation",
+    "url": "https://eclipse.dev/sumo/docs/TraCI/index.html",
+    "contribution": "Provides external simulation control through TraCI.",
+    "limitation": "Simulation configuration and version must be frozen for reproducibility.",
+    "use": "Selected evaluation adapter and controlled signal transition mechanism."
+  },
+  {
+    "id": "S14",
+    "authors": "CityFlow project",
+    "year": "accessed 16 Oct 2026",
+    "title": "CityFlow project documentation",
+    "type": "Official technical documentation",
+    "url": "https://cityflow-project.github.io/",
+    "contribution": "Traffic simulator aimed at city-scale multi-agent research with a Python interface.",
+    "limitation": "This project needs only one junction; a city-scale simulator is not essential.",
+    "use": "Open research comparator and simulation alternative."
+  },
+  {
+    "id": "S15",
+    "authors": "PTV Group",
+    "year": "accessed 16 Oct 2026",
+    "title": "PTV Vissim product documentation",
+    "type": "Official vendor documentation",
+    "url": "https://www.ptvgroup.com/en/products/ptv-vissim",
+    "contribution": "Commercial microscopic traffic simulation platform.",
+    "limitation": "Product descriptions are vendor evidence, not independent accuracy or price comparisons.",
+    "use": "Existing-system comparator; access and API edition require checking."
+  },
+  {
+    "id": "S16",
+    "authors": "Aimsun",
+    "year": "accessed 16 Oct 2026",
+    "title": "Aimsun Next transport modelling software",
+    "type": "Official vendor documentation",
+    "url": "https://www.aimsun.com/aimsun-next-transport-modelling-software/",
+    "contribution": "Supports microscopic and broader-scale traffic modelling.",
+    "limitation": "Edition-specific integration rights and availability require confirmation.",
+    "use": "Existing-system comparator; no assumed student licence."
+  },
+  {
+    "id": "S17",
+    "authors": "FastAPI contributors",
+    "year": "accessed 16 Oct 2026",
+    "title": "FastAPI documentation",
+    "type": "Official technical documentation",
+    "url": "https://fastapi.tiangolo.com/",
+    "contribution": "Typed Python API framework with automatic API documentation.",
+    "limitation": "An API framework does not schedule inference workers by itself.",
+    "use": "Future API boundary; run inference in a separate worker."
+  },
+  {
+    "id": "S18",
+    "authors": "SQLite contributors",
+    "year": "accessed 16 Oct 2026",
+    "title": "Appropriate Uses For SQLite",
+    "type": "Official technical documentation",
+    "url": "https://www.sqlite.org/whentouse.html",
+    "contribution": "Embedded database suitable for many local application uses.",
+    "limitation": "High writer concurrency and remote multi-user operation need separate assessment.",
+    "use": "Initial local run metadata store; move to PostgreSQL if concurrency requires it."
+  }
+]

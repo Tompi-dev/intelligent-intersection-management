@@ -1,0 +1,13 @@
+@startuml
+left to right direction
+actor "Research operator" as Operator
+actor "Academic reviewer" as Reviewer
+rectangle "Intersection management system" as System
+rectangle "Video source" as Camera
+rectangle "SUMO simulator" as SUMO
+Operator --> System : configuration
+Camera --> System : timestamped frames
+System --> SUMO : guarded phase decisions
+SUMO --> System : state and metrics
+System --> Reviewer : reports
+@enduml

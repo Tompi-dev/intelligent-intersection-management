@@ -1,0 +1,23 @@
+@startuml
+component "Source adapter
+planned" as Source
+component "Perception worker
+planned" as CV
+component "Demand estimator
+planned" as Estimator
+component "Controller and guard
+CLI implemented" as Controller
+component "SUMO adapter
+planned" as SUMO
+component "Operator interface
+SVG mockups" as UI
+database "Run store
+planned" as Store
+Source --> CV : timestamped frames
+CV --> Estimator : tracks
+Estimator --> Controller : TrafficState
+Controller --> SUMO : guarded phase
+Controller --> Store : decisions
+SUMO --> Store : metrics
+Store --> UI : reports
+@enduml
