@@ -13,3 +13,5 @@
 - [Risks dependencies and mitigations](11-risks.md)
 - [Supervisor review and submission procedure](12-supervision-and-submission.md)
 - [References](13-references.md)
+
+- [Live YouTrack backlog and issue mapping](tasks/INDEX.md)

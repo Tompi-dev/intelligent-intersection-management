@@ -22,7 +22,9 @@ Executable prototype: Python 3.10+ standard library, JSON fixtures and unittest.
 
 ## Links
 Project repository: https://github.com/Tompi-dev/intelligent-intersection-management (private). The URLs above identify the individual team accounts.
-YouTrack project URL: to add after creation.
+YouTrack project: https://tomiris.youtrack.cloud/projects/IIM
+Kanban board: https://tomiris.youtrack.cloud/agiles/204-1/218-1
+Backlog: [14 actual YouTrack issues](docs/tasks/INDEX.md).
 Documentation: [index](docs/INDEX.md).
 Prototype: [instructions](prototype/README.md).
 
