@@ -19,8 +19,8 @@ For recorded video, monitoring may operate independently. A closed-loop transpor
 ## Team responsibilities proposed for confirmation
 | Member | Account | Proposed responsibility |
 |---|---|---|
-| Student A | https://github.com/akentay | Perception, annotation and queue estimation |
-| Student B | https://github.com/Tompi-dev | Architecture, controller and integration |
-| Student C Aiisana | https://github.com/Aiisana | Prototype, evaluation and project coordination |
+| Кентай Аида Бауыржанқызы | https://github.com/akentay | Perception, annotation and queue estimation |
+| Касымова Томирис Абзаловна | https://github.com/Tompi-dev | Architecture, controller and integration |
+| Куанышбек Айсана | https://github.com/Aiisana | Prototype, evaluation and project coordination |
 
-Every member contributes documentation, implementation and peer review. These allocations are proposed and require team agreement. Full names, supervisor name, institution, selected site and hardware remain to be supplied.
+Supervisor: Туткышбаева Шырын Сарыбаевна. Every member is expected to contribute documentation, implementation and peer review; assignment alone is not evidence of completed work. Responsibilities remain subject to team agreement. Selected site, hardware and final institutional formatting remain to be confirmed.

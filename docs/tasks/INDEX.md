@@ -3,7 +3,7 @@
 Project: https://tomiris.youtrack.cloud/projects/IIM
 Board: https://tomiris.youtrack.cloud/agiles/204-1/218-1
 
-Created on 19 October 2026. All issues are open in the backlog. Proposed owners and deadlines are recorded in descriptions; YouTrack assignees are empty pending confirmed accounts. No invitations were sent. No interview, external review or historical contribution is implied.
+Created on 19 October 2026. All issues are open in the backlog. Owners are assigned in the live YouTrack project (22 October 2026); proposed deadlines are recorded in descriptions. Invitations were sent to the team. No interview, external review or historical contribution is implied.
 
 | Plan | YouTrack | Proposed owner | Proposed deadline |
 |---|---|---|---|
