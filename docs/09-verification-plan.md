@@ -32,4 +32,4 @@ The proposed success target is at least 10 percent lower mean waiting time versu
 | T11 | Declared hardware, warm-up and 10 min p95 latency record | NFR02 |
 | T12 | Secret scan, dataset permission review and retention check | NFR05 |
 
-The delivered unit tests cover the narrow CLI implementation only. Dataset evaluation, user walkthroughs and simulation runs remain scheduled work. Store future measured results separately from this plan, with run IDs and evidence links.
+The delivered tests cover the narrow controller implementation and the local demonstration API contract (20 tests as of 22 October 2026). They do not constitute full browser, dataset or transport validation. Dataset evaluation, recorded user walkthroughs and simulation runs remain scheduled work. Store future measured results separately from this plan, with run IDs and evidence links.
